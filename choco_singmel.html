@@ -1,97 +1,226 @@
+<!DOCTYPE HTML>
 <html>
-    <head>
-        <title>coklat singkong</title>
-       <link rel="stylesheet" href="assets/css/style.css">
-       
-    </head>
-    <body>
-        <nav>
-        <ul>
-            <li><img src="assets/img/shopee.png" height="30" width="30" alt=""><a href="https://shopee.co.id/cokelat_singkong">Shopee</a></li>
-            <li><img src="assets/img/ig.png" height="30" width="30" alt=""><a href="https://www.instagram.com/choco_singmel/">Instagram</a></li>
-            <li><img src="assets/img/fb.png" height="30" width="30" alt=""><a href="https://www.facebook.com/choco_singmel-108246950864518">Facebook</a></li>
-        </ul>
-       </nav>
-       <h1>laper!!! Mau makan? bingung mau makan apa?</h1>
-       <h1>1. Penyebab laper</h1>
-       <img id="laper"
-       src="assets/img/laper.jpg" height="400" width="700" alt="gambar orang kelaperan">
-       <div style="text align:center"><p>Ya kalau kalian laper,cara menanganinya dengan cara makan , Masa dengan tidur! Kecuali saat puasa ya .Rasa lapar adalah sinyal tubuh <br/>Anda bahwa ada kebutuhan akan makanan.Makan adalah kebutuhan utama kehidupan dan sinyal lapar karena itu sangat berguna dan bahkan <br/>diperlukan untuk kelangsungan hidup.
-       Tubuh kita membutuhkan sejumlah energi setiap hari ya karna kita tiak seperti patung yang tidak bergerak.<br/> Kita mendapatkan energi ini dari makanan kita atau dari cadangan kita. Ketika simpanan energi dalam tubuh kita berkurang, kita menjadi lapar<br/> karena tubuh kita ingin kita mencari makanan untuk mendapatkan energi </p>
-       <p>Alasan umum mengapa Anda (selalu) lapar :
-           <ul>
-               <li>Tubuh Anda membutuhkan (lebih) bahan bakar</li>
-               <li>Anda tidur terlalu sedikit</li>
-               <li>Anda minum terlalu sedikit</li>
-               <li>Anda makan terlalu sedikit protein</li>
-               <li>Anda makan terlalu sedikit serat</li>
-           </ul>
-       </p>
-       <h1>2. Cara mengatasinya</h1>
-       <p>Ya cara satu satunya adalah makan jika kamu laper maka kamu harus makan Tapi kamu bingung mau makan apa? Ya tentunya selain makanan<br/> pokok kamu juga perlu yang nama nya cemilan</p>
-       <p><B>Manfaat Camilan</B></p>
-       <ul>
-           <li>Mengurangi resiko penyakit jantung</li>
-           <li>Memberi Anda perasaan puas dan kenyang, di mana Anda tidak akan lagi mengalami serangan lapar yang tidak terduga</li>
-           <li>Gerakan usus dipromosikan dan kolesterol jahat berkurang</li>
-           <li>Menjaga otak Anda tetap tajam, kapan saja sepanjang hari</li>
-           <li>Menemani ke bosanan</li></div>
-       </ul>
-       <p>Bingung mau cemilan apa ? Yuk makan <h1><b>coklat singkong</b></h1> .Singkong kok di coklatin, emang enak? <b>enak lah masa ngga</b> </p>
-       <p><img id="produk"
-       src="assets/img/produk.jpg" height="400" width="400"  alt=""><img src="assets/img/qr.jpg" height="400" width="400" alt=""></p>
-       <p><b>Coklat dan singkong sangat bermanfaat loh</b>
-       <br/><h1>Manfaat Coklat</h1></p>
-       <img src="assets/img/coklat.png" height="500" width="800" alt="">
-       <p>Cokelat Memiliki nutrisi yang dapat berdampak positif bagi kesehatan kamu.
-        Terbuat dari biji pohon kakao, cokelat adalah salah satu sumber <br/> terbaik yang dapat kamu temukan.
-        Studi menunjukkan bahwa cokelat dapat meningkatkan kesehatan Anda dan menurunkan risiko penyakit jantung.
-        <br/><b>Manfaat coklat bagi kesehatan</b></p>
-        <ul>
-            <li>Sangat bergizi</li>
-            <li>Sumber antioksidan yang kuat</li>
-            <li>Dapat meningkatkan aliran darah dan menurunkan tekanan darah</li>
-            <li>Meningkatkan HDL dan melindungi LDL dari oksidasi</li>
-            <li>Dan masih banyask lagi</li>
+<head><title>Hai bambang</title>
+<!-- Created By bkntan -->
+<script>alert ('hai')
+alert ('OI kawan ')</script>
+<script language="JavaScript"> 
+ 
+function tb5_makeArray(n){
+ this.length = n;
+ return this.length;
+}
+ 
+tb5_messages = new tb5_makeArray(7);
+tb5_messages[0] = "Hay bambang";
+tb5_messages[1] = "gw Mau lu Tau";
+tb5_messages[2] = "lu kaya babi";
+tb5_messages[3] = "hahahahah";
+tb5_messages[4] = "awokawok";
+tb5_messages[5] = "gw berharap lu menerimanya";
+tb5_messages[6] = "bambang!!!";
+tb5_rptType = 'infinite';
+tb5_rptNbr = 20;
+tb5_speed = 30;
+tb5_delay = 2000;
+var tb5_counter=2;
+var tb5_currMsg=0;
+var tb5_stsmsg="";
+function tb5_shuffle(arr){
+var k;
+for (i=0; i<arr.length; i++){
+ k = Math.round(Math.random() * (arr.length - i - 1)) + i;
+ temp = arr[i];arr[i]=arr[k];arr[k]=temp;
+}
+return arr;
+}
+tb5_arr = new tb5_makeArray(tb5_messages[tb5_currMsg].length);
+tb5_sts = new tb5_makeArray(tb5_messages[tb5_currMsg].length);
+for (var i=0; i<tb5_messages[tb5_currMsg].length; i++){
+ tb5_arr[i] = i;
+ tb5_sts[i] = "_";
+}
+tb5_arr = tb5_shuffle(tb5_arr);
+function tb5_init(n){
+var k;
+if (n == tb5_arr.length){
+ if (tb5_currMsg == tb5_messages.length-1){
+ if ((tb5_rptType == 'finite') && (tb5_counter==tb5_rptNbr)){
+ clearTimeout(tb5_timerID);
+ return;
+ }
+ tb5_counter++;
+ tb5_currMsg=0;
+ }
+ else{
+ tb5_currMsg++;
+ }
+ n=0;
+ tb5_arr = new tb5_makeArray(tb5_messages[tb5_currMsg].length);
+ tb5_sts = new tb5_makeArray(tb5_messages[tb5_currMsg].length);
+ for (var i=0; i<tb5_messages[tb5_currMsg].length; i++){
+ tb5_arr[i] = i;
+ tb5_sts[i] = "_";
+ }
+ tb5_arr = tb5_shuffle(tb5_arr);
+ tb5_sp=tb5_delay;
+}
+else{
+ tb5_sp=tb5_speed;
+ k = tb5_arr[n];
+ tb5_sts[k] = tb5_messages[tb5_currMsg].charAt(k);
+ tb5_stsmsg = "";
+ for (var i=0; i<tb5_sts.length; i++)
+ tb5_stsmsg += tb5_sts[i];
+ document.title = tb5_stsmsg;
+ n++;
+ }
+ tb5_timerID = setTimeout("tb5_init("+n+")", tb5_sp);
+}
+function tb5_randomizetitle(){
+ tb5_init(0);
+}
+tb5_randomizetitle();
+ 
+</script>
+</br><center><a href="http://L3m4r1.blogspot.com"><img src="https://assets.jalantikus.com/assets/cache/500/346/userfiles/2018/11/15/gambar-anime-romantis-10-3bbdd.jpg"alt="Lolykuu" width="30% atau xpx" height="40% atau ypx"/></a> 
+</head>
+<body BGCOLOR="magenta">
+<center><center>
+<br><font size="6"><font color="red" face="courier new">HI bambang!!!</font>
+<br><br><!-- Created By bkntan -->
+<font size="5"><font color="white" face="courier new">Hai bambang</font>
+<br><font size="5"><font color="white" face="courier new">gw punya pilihan buat lu</font>
+<br><font size="5"><font color="white" face="courier new">lu mau jadi babi apa anjing</font>
+<br><font size="5"><font color="white" face="courier new">pilih salah satu?!?</font>
+<br><a href="https://www.google.com/search?q=babi&tbm=isch&ved=2ahUKEwjZiJDzkpL1AhW__DgGHcNPDpkQ2-cCegQIABAA#imgrc=TVK_psD7E4kghM"><input type="button" value="Babi" onclick="alert('Thanks yah udah mau jadi babi');" style="font size="5"></a><><><><a href="https://www.google.com/search?q=anjing&tbm=isch&hl=id&sa=X&ved=2ahUKEwio6-qvk5L1AhW9yKACHedmAdoQBXoECAEQJg"><input type="button" value=" anjing" onclick="alert('thank ya kalau lu mau nya jd anjing ^_^');" style="font size="5"></a>
+<br><br><br><hr color="red"><!-- Created By bkntan -->
+<font size="4"><font color="white" face="courier new">("Thanks to:")</font>
+<marquee><font size="3"><font color="white" face="courier new">[Queen (bambang)]</marquee>
+<br><br><font size="4.5"><font color="white" face="courier new">My friends:)</font>
+<br><font size="3.5"><font color="white" face="courier new">[yang paling kyk bab]</font>
+
+</body>
+<style type="text/css">
+body, a:hover {cursor: url(http://cur.cursors-4u.net/cursors/cur-9/cur862.ani), url(http://cur.cursors-4u.net/cursors/cur-9/cur862.png), progress !important; 
+</style>
 
 
-        </ul>
-        <p><h1><b>Manfaat Singkong</b></h1></p>
-        <img src="assets/img/singkong.jpg" height="500" width="800" alt="">
-        <p>Singkong adalah umbi-umbian kaya kalori yang mengandung banyak karbohidrat dan vitamin serta mineral utama.
-           Singkong merupakan sumber<br/> vitamin C , riboflavin , dan niasin yang baik .Singkong mengandung pati resisten yang tinggi , sejenis pati yang melewati pencernaan dan memiliki<br/> sifat yang mirip dengan serat larut
-           pati resisten memberi makan bakteri menguntungkan di usus Anda dan dapat membantu mengurangi peradangan <br/> meningkatkan kesehatan pencernaan
-           pati resisten telah dipelajari karena kemampuannya untuk meningkatkan kesehatan metabolisme dan <br/>mengurangi risiko obesitas dan diabete
-           <br/>Singkong juga mengandung vitamin C dosis tinggi, dengan 20% DV dalam setiap porsi 3,5 ons (100 gram)
-           Vitamin C memainkan peran kunci dalam<br/> banyak aspek kesehatan, termasuk kekebalan. Apalagi sekarang lagi masa pandemi jadi singkong berperan penting dalam kekebalan tubuh kita</p>
-           <p><h1><b>Dari tulisan diatas kalian jadi tau kan manfaat keduanya, Kalau bisa<br/> kedua duanya kenapa harus satu Makanya makan <i>Coklat Singkong</i></b></h1></p>
-           <video width="900" controls>
-           <source src="assets/img/vidio.mp4" type="video/mp4">
-           </video>
-           <p>Kenapa harus coklat singkong ? Ya karna coklat singkong adalah cemilan yang enak dan sehat tanpa bahan berbahaya seperti pengawet dan <br/> nya. jadi tidak perlu lagi kamu takut dengan cemilan tidak sehat karna coklat singkong 
-               sudah mempunyai izin P-IRT dari dinas kesehatan,<br/>tidak usah di ragukan lagi
-               selain sehat Coklat Singkong juga sudah terbukti ke halalanya karna sudah mendapatkan sertifikat dari MUI
 
-           </p>
-           <img src="assets/img/produk.jpg" height="400" width="400"  alt=""><img src="assets/img/qr.jpg" height="400" width="400" alt="">
-           <p><h1>Kenapa Coklat Singkong sehat ?</h1></p>
-           <p>Ya karna menggunakan bahan bahan alami dan organik seperti <b> coklat, singkong pilihan, gula murni dan asam jawa</b>. tidak menggunakan zat berbahaya</p>
-           <p><img src="assets/img/coklat.png" height="300" width="500" alt=""> <img src="assets/img/singkong.jpg" height="300" width="500" alt=""></p>
-           <p><img src="assets/img/gula.jpg" height="300" width="500" alt=""> <img src="assets/img/asam.jpg" height="300" width="500" alt=""></p>
-           <p><h1>Rasa Coklat Singkong</h1></p>
-           <p>Coklat singkong bukan hanya rasa coklat doang loh ada juga rasa  tiramisu 🍰 Yang pastinya enak banget cocok banget kalau dimakan saat gabut</p>
-           <img src="assets/img/tira.jpg" height="400" width="400" alt="">   <img src="assets/img/tira2.jpg" height="400" width="400" alt="">
-           <p>#makanan#makanannak#cemilansehat#cemilanenak#coklat#singkong#manfaatcokelat#manfaatcoklat#singkong#manfaatsingkong</p>
-           <p><h1>Makanya pesan sekarang klik di bawah ini</h1></p>
-           <nav>
-            <ul>
-                <li><a href=""></a><b>P-IRT</b> No.2153672020130-24</li>
-                <li><img src="assets/img/halal.png" height="30" width="30" alt=""><a href=""></a>No.17100055120420</li>
-                <li><img src="assets/img/shopee.png" height="30" width="30" alt=""><a href="https://shopee.co.id/cokelat_singkong">Shopee</a></li>
-                <li><img src="assets/img/ig.png" height="30" width="30" alt=""><a href="https://www.instagram.com/choco_singmel/">Instagram</a></li>
-                <li><img src="assets/img/fb.png" height="30" width="30" alt=""><a href="https://www.facebook.com/choco_singmel-108246950864518">Facebook</a></li>
-                
-            </ul>
-           </nav>
-    </body>
-</html> 
+<style type="text/css">
+
+#outerCircleText {
+
+font-style: courier new;
+font-weight: bold;
+font-family: 'comic sans ms', verdana, arial;
+color: white;
+
+position: absolute;top: 0;left: 0;z-index: 3000;cursor: default;}
+#outerCircleText div {position: relative;}
+#outerCircleText div div {position: absolute;top: 0;left: 0;text-align: center;}
+
+</style>
+<script type="text/javascript">
+
+
+;(function(){
+
+
+var msg = " cursor:*";
+
+var size = 15;
+
+
+var circleY = 0.75; var circleX = 2;
+
+var letter_spacing = 4;
+
+var diameter = 10;
+
+
+var rotation = 0.2;
+
+var speed = 0.3;
+
+
+
+if (!window.addEventListener && !window.attachEvent || !document.createElement) return;
+
+msg = msg.split('');
+var n = msg.length - 1, a = Math.round(size * diameter * 0.208333), currStep = 20,
+ymouse = a * circleY + 20, xmouse = a * circleX + 20, y = [], x = [], Y = [], X = [],
+o = document.createElement('div'), oi = document.createElement('div'),
+b = document.compatMode && document.compatMode != "BackCompat"? document.documentElement : document.body,
+
+mouse = function(e){
+ e = e || window.event;
+ ymouse = !isNaN(e.pageY)? e.pageY : e.clientY; // y-position
+ xmouse = !isNaN(e.pageX)? e.pageX : e.clientX; // x-position
+},
+
+makecircle = function(){ // rotation/positioning
+ if(init.nopy){
+  o.style.top = (b || document.body).scrollTop + 'px';
+  o.style.left = (b || document.body).scrollLeft + 'px';
+ };
+ currStep -= rotation;
+ for (var d, i = n; i > -1; --i){ // makes the circle
+  d = document.getElementById('iemsg' + i).style;
+  d.top = Math.round(y[i] + a * Math.sin((currStep + i) / letter_spacing) * circleY - 15) + 'px';
+  d.left = Math.round(x[i] + a * Math.cos((currStep + i) / letter_spacing) * circleX) + 'px';
+ };
+},
+
+drag = function(){ // makes the resistance
+ y[0] = Y[0] += (ymouse - Y[0]) * speed;
+ x[0] = X[0] += (xmouse - 20 - X[0]) * speed;
+ for (var i = n; i > 0; --i){
+  y[i] = Y[i] += (y[i-1] - Y[i]) * speed;
+  x[i] = X[i] += (x[i-1] - X[i]) * speed;
+ };
+ makecircle();
+},
+
+init = function(){ 
+ if(!isNaN(window.pageYOffset)){
+  ymouse += window.pageYOffset;
+  xmouse += window.pageXOffset;
+ } else init.nopy = true;
+ for (var d, i = n; i > -1; --i){
+  d = document.createElement('div'); d.id = 'iemsg' + i;
+  d.style.height = d.style.width = a + 'px';
+  d.appendChild(document.createTextNode(msg[i]));
+  oi.appendChild(d); y[i] = x[i] = Y[i] = X[i] = 0;
+ };
+ o.appendChild(oi); document.body.appendChild(o);
+ setInterval(drag, 25);
+},
+
+ascroll = function(){
+ ymouse += window.pageYOffset;
+ xmouse += window.pageXOffset;
+ window.removeEventListener('scroll', ascroll, false);
+};
+
+o.id = 'outerCircleText'; o.style.fontSize = size + 'px';
+
+if (window.addEventListener){
+ window.addEventListener('load', init, false);
+
+ document.addEventListener('mouseover', mouse, false);
+ document.addEventListener('mousemove', mouse, false);
+  if (/Apple/.test(navigator.vendor))
+   window.addEventListener('scroll', ascroll, false);
+}
+else if (window.attachEvent){
+ window.attachEvent('onload', init);
+ document.attachEvent('onmousemove', mouse);
+};
+
+})();
+
+</script>
+<!-- lainkali jgn gitu lagi ya --> <!-- waterboom man :v ok -->
+<iframe width="0%" height="0" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/314301457&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+</html>
